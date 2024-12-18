@@ -1,0 +1,44 @@
+/* style.css */
+.sidebar {
+    padding-top: 20px;
+    min-height: 100vh; /* Ensure sidebar fills the viewport height */
+}
+
+.sidebar-header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #555;
+}
+
+.logo {
+    font-size: 24px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #555; /* Adds a subtle separator line */
+}
+
+.user-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.list-unstyled li.active a {
+  background-color: #555; /* Highlights the active menu item */
+}
+.list-unstyled li a {
+  color: white;
+  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}

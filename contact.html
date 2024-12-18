@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sidebar-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #6c757d;
+        }
+        .sidebar a.active {
+            background-color: #007bff;
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+        .user img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user span {
+            font-size: 1.2rem;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .divider {
+            height: 1px;
+            background-color: #6c757d;
+            margin: 20px 0;
+        }
+        .logo {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 1.8rem;
+            font-family: 'Arial Black', sans-serif;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .right-content {
+            padding: 20px;
+        }
+        .form-section {
+            margin-top: 40px; /* Отступ сверху для заголовка */
+        }
+        .form-container {
+            border: 1px solid #007bff; /* Цвет рамки */
+            border-radius: 10px; /* Закругление углов */
+            padding: 20px; /* Отступы внутри рамки */
+            background-color: #f8f9fa; /* Цвет фона рамки */
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar bg-dark text-white">
+            <div class="sidebar-header">
+                <span class="logo">{B}</span> Меню
+            </div>
+            <div class="divider"></div>
+            <ul class="list-unstyled">
+                <li><a href="glavn.html" class="active text-white">Главная</a></li>
+                <li><a href="catalog_1.html">Каталог</a></li>
+                <li><a href="category.html">Категории товаров</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <ul class="list-unstyled mt-12">
+                <li style="margin-top: 445px"><a href="#" class="text-white">Профиль</a></li>
+                <li><a href="#" class="text-white">Выход</a></li>
+            </ul>
+            <div class="user">
+                <img src="https://avatars.mds.yandex.net/i?id=a406524da89aa6df59913cf39c6ab848_l-5219777-images-thumbs&n=13"
+                     alt="Пользователь" class="user-icon">
+                <span>Пользователь <span>▼</span></span>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="form-section text-center">
+                <h1>Контакты</h1>
+            </div>
+            <div class="row">
+ <div class="col-md-6">
+                    <div class="form-container">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Почта</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Ваши данные защищенны</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Пользовательское соглашение</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 right-content">
+                    <h2>Наши контакты</h2>
+                    <p>Если у вас есть вопросы, не стесняйтесь обращаться к нам. Мы всегда готовы помочь!</p>
+                    <p>Наши контактные данные:</p>
+                    <ul>
+                        <li>Телефон: +7 777 777 77 77</li>
+                        <li>Email: info@mail.ru</li>
+                        <li>Адрес: г. Москва</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
